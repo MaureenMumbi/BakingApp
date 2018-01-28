@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:gravity="center_horizontal"
+    android:id="@+id/recipedetail_linear_layout"
+   >
+
+
+    <android.support.v7.widget.Toolbar android:id="@+id/app_toolbar"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/accent_blue"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+    <LinearLayout
+        android:id="@+id/recipestep_linear_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+      >
+
+        <!--<ScrollView-->
+            <!--android:id="@+id/recipeDetailScrollView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--tools:layout_editor_absoluteY="0dp"-->
+            <!--tools:layout_editor_absoluteX="8dp">-->
+        <FrameLayout
+            android:id="@+id/detail_fragment_container"
+            android:layout_width="400dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" >
+
+
+        </FrameLayout>
+        <!--</ScrollView>-->
+        <FrameLayout
+            android:id="@+id/steps_detail_fragment_container"
+            android:scaleType="centerInside"
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="25dp"
+
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
